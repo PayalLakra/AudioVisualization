@@ -20,29 +20,14 @@ You can install the required packages using the `requirements.txt` file provided
 ```bash
 pip install -r requirements.txt
 
-Installation::
-Clone this repository:
+INSTALLATION STEPS::
 
-bash
-git clone https://github.com/yourusername/audiovisualizer.git
-Navigate to the project directory:
-
-bash
-cd audiovisualizer
-Create and activate a virtual environment (optional but recommended):
-
-bash
-python -m venv venv
+Clone this repository: git clone https://github.com/yourusername/audiovisualizer.git
+Navigate to the project directory:  cd audiovisualizer
+Create and activate a virtual environment (optional but recommended):  python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-Install the dependencies:
-
-bash
-pip install -r requirements.txt
-Usage
-Run the application:
-
-bash
-python main.py
+Install the dependencies:  pip install -r requirements.txt
+Run the application:  python main.py
 
 The main window will open with the following controls:
 Start: Begin capturing and visualizing audio.
