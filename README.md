@@ -63,8 +63,8 @@ AudioVisualizer:: AudioVisualizer is a Python application that allows users to v
 - **`update_plot_range` Method**: Updates the plot range based on selected buffer size.
 
 ##Screenshots
-![Screenshot (266)](https://github.com/user-attachments/assets/185d399c-6453-4f0f-b9d2-0ce102c05302)
-![Screenshot (265)](https://github.com/user-attachments/assets/80bdcf52-e0d9-4f45-a0f0-8855ae3185f5)
 <img width="959" alt="Screenshot 2024-08-13 111612" src="https://github.com/user-attachments/assets/cb68eed7-3bfc-4c21-a9b8-f4b424525d14">
+![Screenshot (266)](https://github.com/user-attachments/assets/185d399c-6453-4f0f-b9d2-0ce102c05302)
+
 
 
