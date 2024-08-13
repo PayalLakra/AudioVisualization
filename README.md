@@ -1,38 +1,70 @@
-AUDIO VISUALIZATION :: An Audio Visualizer application built using PyQt5 and PyAudio. This application captures audio input from a microphone, visualizes it in real-time using pyqtgraph, and allows users to record and save the audio data.
+AudioVisualizer:: AudioVisualizer is a Python application that allows users to visualize live audio input or playback of audio files. It features a graphical user interface (GUI) built with PyQt5 and displays audio waveforms in real-time using PyQtGraph.
 
 ## Features
-- Real-time audio visualization
-- Adjustable visualization speed
-- Adjustable buffer size for x-axis range
-- Start and stop audio recording
-- Save recorded audio as WAV files
+
+- **Live Audio Visualization**: View real-time audio waveforms from a microphone or other audio input devices.
+- **File Playback**: Load and visualize audio from WAV files.
+- **Recording**: Record live audio and save it as a WAV file.
+- **Adjustable Speed and Buffer Size**: Customize visualization speed and buffer size.
+- **Real-Time Sample Rate Display**: Display the current or loaded sample rate.
 
 ## Requirements
-To run this project, you need Python 3 and the following Python packages:
 
-- `PyQt5`
-- `pyqtgraph`
-- `numpy`
-- `pyaudio`
-- `scipy`
-You can install the required packages using the `requirements.txt` file provided:
+- Python 3.x
+- PyQt5
+- PyQtGraph
+- NumPy
+- PyAudio
+- SciPy
 
-```bash
-pip install -r requirements.txt
+## Installation
 
-INSTALLATION STEPS::
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/PayalLakra/AudioVisualizer.git
+    cd AudioVisualizer
+    ```
 
-Clone this repository: git clone https://github.com/yourusername/audiovisualizer.git
-Navigate to the project directory:  cd audiovisualizer
-Create and activate a virtual environment (optional but recommended):  python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-Install the dependencies:  pip install -r requirements.txt
-Run the application:  python main.py
+2. **Create a virtual environment** (optional but recommended):
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
 
-The main window will open with the following controls:
-Start: Begin capturing and visualizing audio.
-Stop: Stop capturing and visualizing audio.
-Record: Start/stop recording the audio. The button text toggles between "Record" and "Stop Recording".
-Speed: Select "Fast" or "Slow" to adjust the update frequency of the visualization.
-Buffer Size: Select the size of the buffer to adjust the x-axis range of the visualization.
-To save recorded audio, click the "Record" button to start recording, and click it again to stop. A file dialog will prompt you to save the recorded audio as a WAV file.
+3. **Install the required packages**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1. **Run the application**:
+    ```bash
+    python main.py
+    ```
+
+2. **GUI Controls**:
+    - **Start**: Begin visualizing live audio input.
+    - **Stop**: Stop the audio input visualization.
+    - **Record**: Toggle recording of live audio. Save the recording as a WAV file when stopped.
+    - **Load File**: Open a WAV file and visualize its waveform.
+    - **Speed**: Select between "Fast" and "Slow" update rates for the plot.
+    - **Buffer Size**: Choose the buffer size for the x-axis range of the plot.
+
+## Code Overview
+
+- **`AudioVisualizer` Class**: Main class for the GUI application, handling audio input, visualization, and recording.
+- **`start_recording` Method**: Initializes audio stream and starts the timer for visualization.
+- **`stop_recording` Method**: Stops the audio stream and timer.
+- **`update_plot` Method**: Updates the plot with new audio data or file data.
+- **`toggle_recording` Method**: Starts or stops recording audio based on the current state.
+- **`load_file` Method**: Loads an audio file and visualizes its waveform.
+- **`update_timer_interval` Method**: Adjusts the timer interval based on selected speed.
+- **`update_plot_range` Method**: Updates the plot range based on selected buffer size.
+
+##Screenshots
+![Screenshot (266)](https://github.com/user-attachments/assets/185d399c-6453-4f0f-b9d2-0ce102c05302)
+![Screenshot (265)](https://github.com/user-attachments/assets/80bdcf52-e0d9-4f45-a0f0-8855ae3185f5)
+<img width="959" alt="Screenshot 2024-08-13 111612" src="https://github.com/user-attachments/assets/cb68eed7-3bfc-4c21-a9b8-f4b424525d14">
+
+
