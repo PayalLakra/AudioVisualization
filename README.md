@@ -66,6 +66,9 @@ AudioVisualizer:: AudioVisualizer is a Python application that allows users to v
 <img width="959" alt="Screenshot 2024-08-13 111612" src="https://github.com/user-attachments/assets/cb68eed7-3bfc-4c21-a9b8-f4b424525d14">
 ![Screenshot (266)](https://github.com/user-attachments/assets/185d399c-6453-4f0f-b9d2-0ce102c05302)
 
+## Credits
+Support and Guidance: Special thanks to http://upsidedownlabs.tech/ for their continuous support and guidance.
+
 
 
 https://github.com/user-attachments/assets/1394b456-35ab-4c96-8411-1785f7f8b84b
